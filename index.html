@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced 2D Car Racing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-wrapper">
+        <div class="game-header">
+            <h1>TURBO RACER</h1>
+            <div class="stats">
+                <div>Score: <span id="score">0</span></div>
+                <div>High Score: <span id="highScore">0</span></div>
+            </div>
+        </div>
+
+        <div class="canvas-container">
+            <canvas id="gameCanvas" width="450" height="650"></canvas>
+            
+            <!-- Start Screen Overlay -->
+            <div id="startScreen" class="overlay">
+                <h2>Ready to Race?</h2>
+                <p>Use <b>Arrow Keys</b> or <b>A / D</b> to steer.</p>
+                <p>Avoid other cars and survive!</p>
+                <button id="startBtn">START GAME</button>
+            </div>
+
+            <!-- Game Over Screen Overlay -->
+            <div id="gameOverScreen" class="overlay hidden">
+                <h2>CRASH!</h2>
+                <p>Final Score: <span id="finalScore">0</span></p>
+                <button id="restartBtn">PLAY AGAIN</button>
+            </div>
+        </div>
+
+        <div class="controls-hint">
+            <span>⬅️ Left / A</span>
+            <span>Right / D ➡️</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
